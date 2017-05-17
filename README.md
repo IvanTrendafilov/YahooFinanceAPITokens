@@ -15,13 +15,18 @@ Gets tokens for Yahoo Finance API data.
 You should see something like this:
 
 Fetch url https://finance.yahoo.com/quote/^GSPC/history?p=^GSPC
+
 status: success
+
 title: ^GSPC Historical Prices | S&P 500 Stock - Yahoo Finance
+
 csv url: https://query1.finance.yahoo.com/v7/finance/download/^GSPC?period1=1492463852&period2=1495055852&interval=1d&events=history&crumb=XXXXXXX
+
 crumb: XXXXXXX
+
 cookie: B=YYYYYY
 
-Sometimes the script doesn't work. Try adjusting the user agent and sleep values. 
+Sometimes the script doesn't work and instead prints weird phantomjs debug info. Try adjusting the user agent and sleep values. 
 
 When it works, you can download historical data with a request like this:
 
