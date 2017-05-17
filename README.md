@@ -25,6 +25,8 @@ Sometimes the script doesn't work. Try adjusting the user agent and sleep values
 
 When it works, you can download historical data with a request like this:
 
-curl 'https://query1.finance.yahoo.com/v7/finance/download/%5EGSPC?period1=1492463852&period2=1495055852&interval=1d&events=history&crumb=XXXXXXX' -H 'user-agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)' -H 'cookie: B=YYYYYY;' -H 'referer: https://finance.yahoo.com/quote/%5EGSPC/history?p=%5EGSPC'
+`curl 'https://query1.finance.yahoo.com/v7/finance/download/%5EGSPC?period1=1492463852&period2=1495055852&interval=1d&events=history&crumb=XXXXXXX' -H 'user-agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)' -H 'cookie: B=YYYYYY;' -H 'referer: https://finance.yahoo.com/quote/%5EGSPC/history?p=%5EGSPC'`
 
 replace the cookie and crumb values with the ones from the script. period1 (start) and period2 (end) are dates in unix timestamp format. 
+
+You can also do the same thing in the Chrome dev tools inspector: just find the request in the Network tab. The crumb / cookie values are reusable.
