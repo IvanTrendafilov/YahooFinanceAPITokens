@@ -1,6 +1,6 @@
 # What it does
 
-Gets tokens for Yahoo Finance API data. 
+Gets a cookie and crumb tokens for Yahoo Finance API data. Once you have these, you can reuse them in your requests without restriction. 
 
 ## Usage
 
